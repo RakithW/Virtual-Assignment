@@ -1,0 +1,325 @@
+/* Universal Selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Krona One', sans-serif;
+}
+
+/* Locally hosted web font */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url(../assets/OpenSans-Regular-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Element Selector */
+h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+h2 {
+    margin-left: 5rem;
+    color: #fff;
+    font-size: 5rem;
+}
+
+h3 {
+    padding-bottom: 1.5em;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+h4 {
+    padding-bottom: 1.5em;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 1em;
+}
+
+a {
+    color: #fff;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'open_sansregular', sans-serif;
+}
+
+.abtme a {
+    font-family: 'open_sansregular', sans-serif;
+}
+
+.watermark {
+    color: #fff;
+}
+
+#tutorial p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.abtme {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* ID Selector */
+/* Style for the element with the ID 'main-nav' (the main navigation) */
+#main-nav {
+    background-color: #000;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    padding: 3em;
+}
+
+/* Style for <ul> elements inside the element with ID 'man-nav' */
+#main-nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Style for <a> elements inside the element with ID 'main-nav' */
+#main-nav a {
+    text-decoration: none;
+    padding: 1em;
+    background-color: #000;
+    transition: background-color 1s, border-radius 1s;
+}
+
+#main-nav a:hover {
+    background-color: #2b2b2b;
+    transition: 1s;
+    border-radius: 1.2em;
+}
+
+#main-header {
+    text-align: left;
+    position: relative;
+    background: url('Images/5451954729149d0aac740b66e66d746e [photoutils.com] (2).jpg');
+    background-size: cover;
+    background-position: top;
+    padding: 10em;
+}
+
+main {
+    background: url(Images/8749554966_b66815f6a4_o.jpg);
+    background-size: cover;
+    padding: 10em;
+}
+
+/* Class Selector */
+/* Style for elements with class 'abtme' inside <main> */
+main .abtme {
+    padding: 60px 20px 0 20px;
+}
+
+.abtme {
+    display: block;
+    background-color: rgba(43, 43, 43, .7);
+}
+
+.flex {
+    display: flex;
+    gap: 32px;
+}
+
+/* Style for the element with the ID 'dukeimg' */
+#dukeimg {
+    max-width: 300px;
+    width: auto;
+    margin-bottom: 1.5em;
+}
+
+.contents {
+    background-color: rgba(43, 43, 43, .7);
+    margin: 0 auto;
+    padding: 3.5rem;
+}
+
+.cards-box {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style for elements with class 'card' */
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #6c757d;
+    border-radius: .25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Style for the element with the ID 'card-img' inside elements with class 'card' when hovered */
+#card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s;
+}
+
+/* Style for elements with class 'card' when its hovered affecting the child element with ID 'crd-img' */
+.card:hover #card-img {
+    transform: scale(1.2);
+}
+
+.card-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transition: opacity .3s;
+}
+
+.card:hover .card-content {
+    display: block;
+}
+
+.card-content>p {
+    text-align: center;
+    color: #fff;
+    margin-right: 2em;
+}
+
+.btn {
+    text-decoration: none;
+    margin-top: 20em;
+    margin-right: 2em;
+    display: none;
+    padding: 1.5rem;
+    background-color: #2b2b2b;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.card:hover .btn {
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-me {
+    text-align: center;
+}
+
+.contact-me h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-me p {
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+.contact-me a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-me a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsive design */
+/* Applies styles when the screen width is maximum 800px */
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        margin-left: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .card-content p {
+        font-size: .8rem;
+        color: #fff;
+    }
+
+    .btn {
+        padding: .5rem;
+        margin-top: 1em;
+        font-size: .5rem;
+        margin-right: 4.2em;
+    }
+
+    #main-nav {
+        padding: 1em;
+        padding-right: 3em;
+    }
+
+    #main-nav>ul {
+        flex-direction: row;
+    }
+
+    #main-nav a {
+        padding: .5em;
+    }
+
+    #main-header,
+    main {
+        padding: 1em;
+    }
+
+    main .abtme {
+        padding: 20px 10px 0 10px;
+    }
+
+    #dukeimg {
+        max-width: 200px;
+    }
+
+    .contents {
+        padding: 2rem;
+    }
+
+    /* Adjust grid layout for smaller screens */
+    .cards-box {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+}
